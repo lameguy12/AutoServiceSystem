@@ -1,0 +1,24 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AutoServiceSystem"
+             x:Class="AutoServiceSystem.MainPage">
+    <ScrollView>
+        <StackLayout Margin="20">
+            <Button x:Name="diagnosticServiceButton" BackgroundColor="Green" TextColor="White"/>
+            <Button x:Name="oilChangeServiceButton" BackgroundColor="Green" TextColor="White"/>
+            <Button x:Name="tireChangeServiceButton" BackgroundColor="Green" TextColor="White"/>
+            <Button x:Name="filterChangeServiceButton" BackgroundColor="Green" TextColor="White"/>
+
+            <StackLayout x:Name="basketStackLayout">
+                <Label x:Name="totalAmountLabel" TextColor="Black"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Entry x:Name="customerNameEntry" Placeholder="ФИО заказчика" BackgroundColor="White" TextColor="Black"/>
+                <Entry x:Name="phoneNumberEntry" Placeholder="Номер телефона" BackgroundColor="White" TextColor="Black"/>
+            </StackLayout>
+            <Button x:Name="clearBasketButton" Text="Очистить Корзину" BackgroundColor="Red" TextColor="White"/>
+            <Button x:Name="makeOrderButton" Text="Оформить" BackgroundColor="Blue" TextColor="White"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
